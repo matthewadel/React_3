@@ -6,3 +6,8 @@ export interface CustomButtonProps {
     handleClick?: MouseEventHandler<HTMLButtonElement>;
     btnType?: "button" | "submit";
 }
+
+export interface SearcManufactureProps {
+    manufacturer: string
+    setManufacturer: (manufacture: string) => void
+}
