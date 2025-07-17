@@ -35,7 +35,7 @@ const CarDetails = ({ isOpen, car, closeModal }: CarDetailsProps) => {
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 scale-95"
                 enterTo="opacity-100 scale-100"
-                leave="ease-in duration-200"
+                leave="ease-out duration-300"
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
@@ -67,41 +67,41 @@ const CarDetails = ({ isOpen, car, closeModal }: CarDetailsProps) => {
                         priority
                         className="object-contain"
                       />
+                    </div>
 
-                      <div className="flex gap-3">
-                        <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
-                          <Image
-                            src={generateCarImageUrl(car, "29")}
-                            alt="car model"
-                            fill
-                            priority
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
-                          <Image
-                            src={generateCarImageUrl(car, "33")}
-                            alt="car model"
-                            fill
-                            priority
-                            className="object-contain"
-                          />
-                        </div>
-                        <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
-                          <Image
-                            src={generateCarImageUrl(car, "13")}
-                            alt="car model"
-                            fill
-                            priority
-                            className="object-contain"
-                          />
-                        </div>
+                    <div className="flex gap-3">
+                      <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
+                        <Image
+                          src={generateCarImageUrl(car, "29")}
+                          alt="car model"
+                          fill
+                          priority
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
+                        <Image
+                          src={generateCarImageUrl(car, "33")}
+                          alt="car model"
+                          fill
+                          priority
+                          className="object-contain"
+                        />
+                      </div>
+                      <div className="flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg">
+                        <Image
+                          src={generateCarImageUrl(car, "13")}
+                          alt="car model"
+                          fill
+                          priority
+                          className="object-contain"
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col gap-2 flex-1">
-                    <h2 className="font-semi-bold text-xl capitalize ">
+                    <h2 className="font-semibold text-xl capitalize ">
                       {car.make} {car.model}
                     </h2>
 
@@ -111,7 +111,7 @@ const CarDetails = ({ isOpen, car, closeModal }: CarDetailsProps) => {
                           className="flex justify-between gap-5 w-full text-right"
                           key={key}
                         >
-                          <h4 className="capitalize text-gray-500">
+                          <h4 className="capitalize text-grey">
                             {key.split("_").join(" ")}
                           </h4>
                           <p className="text-black-100 font-semibold">
