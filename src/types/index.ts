@@ -37,3 +37,12 @@ export interface CarProps {
   transmission: string;
   year: number;
 }
+
+interface optionPtops {
+  title: string;
+  value: string;
+}
+export interface CustomFilterProps {
+  title: string;
+  options: optionPtops[];
+}
